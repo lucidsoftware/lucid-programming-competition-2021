@@ -11,10 +11,10 @@ N
 ```
 
 ### Where
-N: number of steps in the map, where one step includes the direction, the angle to turn in degrees, and the number of paces to take forward
-Direction: Left or Right
-Degrees: Number of degrees to turn in the given direction
-Paces: Number of paces to walk forward
+* `N`: number of steps in the map, where one step includes the direction, the angle to turn in degrees, and the number of paces to take forward
+* `Direction`: Left or Right
+* `Degrees`: Number of degrees to turn in the given direction
+* `Paces`: Number of paces to walk forward
 
 ### Example:
 ```
@@ -31,9 +31,9 @@ Direction Degrees Paces
 ```
 
 ### Where:
-Direction: Right or Left
-Degrees: the number of degrees the user turns to face the endpoint
-Paces: the number of paces a user must travel to reach the endpoint
+* `Direction`: Right or Left
+* `Degrees`: the number of degrees the user turns to face the endpoint
+* `Paces`: the number of paces a user must travel to reach the endpoint
 
 For your final answer, the user will never have to turn exactly 180 degrees. They should always turn less than 180 degrees. Therefore, if the endpoint is 10 paces away, directly to the right of the user, you should output:
 ```
