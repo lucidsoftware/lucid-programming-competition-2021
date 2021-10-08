@@ -1,0 +1,7 @@
+6
++ Alice Bob
++ Charlie David
+? Alice Charlie
+? Bob Alice
++ Bob Charlie
+? Alice David

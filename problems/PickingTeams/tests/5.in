@@ -1,0 +1,21 @@
+20
++ Alice Bob
++ Charlie David
+? Alice Bob
+? Alice David
++ Bob David
+? Alice David
++ Charlie David
+? Alice David
+? Charlie David
++ Charlie Emily
++ Emily Francis
++ Francis Ginny
++ Alice Emily
+? Alice Emily
+? Alice Francis
+? Alice Ginny
+? Charlie Ginny
++ Charlie Francis
+? Charlie Francis
+? Alice Francis

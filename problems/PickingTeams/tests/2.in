@@ -1,0 +1,19 @@
+18
+? Alice Bob
+? Alice Charlie
++ Alice Bob
++ Bob Charlie
+? Alice Bob
+? Alice Charlie
+? Bob Charlie
++ David Emily
++ Emily Francis
+? David Francis
+? Bob Emily
++ Francis George
+? Francis George
+? George Francis
+? Bob Alice
+? Helene Bob
+? Irene James
+? James Helene

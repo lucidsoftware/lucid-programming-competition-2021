@@ -1,0 +1,12 @@
+11
+? Alice Bob
++ Bob Charlie
++ Alice Charlie
+? Alice Bob
+? Alice Charlie
++ Bob David
+? David Bob
+? David Alice
++ Charlie David
+? Alice David
+? Bob David
