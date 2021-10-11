@@ -30,9 +30,10 @@ Edits will come in two forms: "additions" and "deletions". Every edit starts wit
 > AGGCGTCA
 
 ### Constraints
-* Max length of G: 50,000
+* Max length of gene sequence: 50,000
 * Max number of edits: 15,000
 * Max length of added/removed text: 10
+* Any ASCII character may appear in a gene sequence
 * Edit indexes are unique
 * Edits are ordered from lowest index to highest index
 * Edits are applied sequentially; the index of a subsequent edit is applied to the outcome of the prior edit
