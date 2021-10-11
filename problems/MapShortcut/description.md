@@ -45,12 +45,14 @@ Left 270 10
 ```
 The angle to turn and the number of paces to take should be rounded to the nearest whole number.
 ## Constraints
+### Input Constraints
 ```
 0 < N <= 10000
 0 < Paces <= 100
 0 < Degrees <= 180
 ```
 Number of paces and angle to turn given in the input will always be integers
+### Output Constraints
 The final direction to take will never be exactly 0 degrees or exactly 180 degrees
 The final number of paces you need to travel will always be greater than 1
 ## Examples
