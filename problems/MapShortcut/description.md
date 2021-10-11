@@ -54,6 +54,7 @@ The angle to turn and the number of paces to take should be rounded to the neare
 Number of paces and angle to turn given in the input will always be integers
 ### Output Constraints
 The final direction to take will never be exactly 0 degrees or exactly 180 degrees
+
 The final number of paces you need to travel will always be greater than 1
 ## Examples
 ### Input 1
