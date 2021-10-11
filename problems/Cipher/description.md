@@ -4,7 +4,7 @@ You've been exchanging secret messages with a friend, but the code you were usin
 
 You will write each character across a grid with a specified number of columns. You will then print the letters taken vertically from each column in the order specified for the columns to be taken.
 
-For example, if you want to convert "Hello, world!" into your secret code, first you would write it out across the three columns:
+For example, if you want to convert "Hello, world!" into your secret code using three columns, first you would write it out across the three columns:
 
 ```
 H e l
@@ -50,20 +50,28 @@ Hl r!l,odeowl
 
 ### Input 0
 
+```
 4
 4 3 2 1
 I am not a robot.
+```
 
 ### Output 0
 
+```
 mtrtao o nabI o.
+```
 
 ### Input 1
 
+```
 2
 1 2
 Life is good.
+```
 
 ### Output 1
 
+```
 Lf sgo.iei od
+```
