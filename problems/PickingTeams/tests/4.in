@@ -1,15 +1,19 @@
-42
+46
 + Alice Bob
 + Alice Charlie
 + Alice David
++ David Charlie
++ David Alice
 + Emily Francis
 + Emily Ginny
 + Emily Helene
++ Helene Emily
 ? Alice Emily
 ? Alice Francis
 ? Alice Ginny
 ? Alice Helene
 + Alice Emily
++ Emily Alice
 ? Alice Emily
 ? Alice Francis
 ? Alice Ginny

@@ -29,13 +29,22 @@ def stealStudent(tar, metaParent):
 def handleClaim(a, b):
     if b in stolen:
         return
-    elif b in claimed:
+    metaParentA = a
+    while metaParentA != parent[metaParentA]:
+        metaParentA = parent[metaParentA]
+    metaParentB = b
+    while metaParentB != parent[metaParentB]:
+        metaParentB = parent[metaParentB]
+    if metaParentA == metaParentB:
+        return
+    if b in claimed:
         # This is stealing - transfer b to a's meta-parent
         # None of b's children should be stolen here, so transfer all of them
         # They will all become stolen
         metaParent = a
         while metaParent != parent[metaParent]:
             metaParent = parent[metaParent]
+        children[parent[b]].remove(b)
         stealStudent(b, metaParent)
         return
     else: # b is fresh
