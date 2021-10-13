@@ -17,7 +17,7 @@ n
 0 0 0 0 0
 ```
 
-The matrix is therefore **m rows tall** and **n rows wide**.
+The matrix is therefore **m rows tall** and **n columns wide**.
 
 ## Output
 Output a 2D n x m array that represents the distance he will have to swim from any given **cave area** to the closest **cave entrance**. Leave any **walls** as -1 (because our diver cannot be inside a wall). Assume that if the diver is at a **cave entrance** he has to swim 0 units. Assume that if a diver cannot reach a **cave area** it remains the same value in the matrix (2147483647). **Your output matrix should be formatted the same as the input matrix.**
