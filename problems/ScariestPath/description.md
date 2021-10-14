@@ -9,6 +9,9 @@ When a visitor goes into a haunted house, they get scared as many times as that 
 For a given collection of scariness values and adjacencies, what is the maximum number of times that a visitor can be scared while visiting?
 
 ## Interpreting the Input
+The input consists of the number of houses `n`, the list of scariness values for the houses, and an `n` by `n` adjacency matrix.
+The `i`th value in the list of scariness values describes the scariness value of the `i`th house.
+The value in the `i`th row and `j`th column of the adjacency matrix is `1` if house `i` is neighbors with house `j`.
 The input will be formatted in the following way:
 
 ```
@@ -16,6 +19,9 @@ n
 x x x x x x <n length list with values separated by spaces>
 0 0 0 0 0 0
 0 0 0 0 0 0 <n x n input matrix with values separated by spaces>
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
 0 0 0 0 0 0
 ```
 
