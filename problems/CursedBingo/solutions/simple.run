@@ -1,0 +1,2 @@
+#!/bin/bash
+timeout 10 node $(dirname $0)/simple.js
