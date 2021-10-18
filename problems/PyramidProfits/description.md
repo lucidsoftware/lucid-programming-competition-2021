@@ -12,19 +12,31 @@ Tired of the day-to-day hustle of managing and fulfilling individual sales, Jude
 internet strangers to actually deal with the business of finding customers and selling to them.
 For every sale made, the salesperson will get a percentage commission of the sale and Jude will keep the rest.
 However, many of the internet strangers that Jude hired quickly realize that they can also hire yet more
-internet strangers to work for _them_ in exchange for a portion of the profits.
+internet strangers to work for _them_ in exchange for splitting their portion of the profits.
 This pattern continues, forming a deep network of internet strangers working for other internet strangers,
-each of them selling Jude's products, keeping a small portion of the profits and passing the rest up the line to their direct superior.
+each of them selling Jude's products.
 
-No matter how the selling is done, a contract is a contract.
+No matter who makes the sale, a contract is a contract.
 If a salesperson negotiates that they will keep 10% of the profit and give their boss 90% for every sale made,
 they owe their immediate boss the 90% regardless of whether they personally made the sale or whether someone working below them made the sale.
-For example, suppose that Jude hires Ian as a saleperson, and that Ian hires Kathy as a salesperson.
-When Kathy makes a sale, she will be paid from Ian's existing portion of the profits, _not from Jude's portion_ (the last programmer we hired for this job mixed this bit up, which is why Jude had to fire them immediately).
+
+For example, suppose that Jude hires Ian and agrees that Ian can keep 40% of the profit from any sale made by Ian or someone working (directly or indirectly) for Ian.
+Then, Ian hires Kathy and agrees that Kathy can keep 20% of Ian's portion of the profit for any sale made by Kathy or someone working (directly or indirectly) for Kathy.
+If Kathy makes a sale worth $1000, _she does not keep 20% of the $1000_.
+The bosses are always paid first, starting from the top.
+This means that Jude keeps 60% ($600) of the $1000 sale.
+The remaining 40% ($400) would be passed to Ian, who keeps 80% of the 40% ($320) for himself and passes the remaining 20% of the 40% ($80) to Kathy.
+
+You are only entitled to profits resulting from a sales made by you or someone working for you.
+For instance, if Ian makes a sale worth $2000, then Jude would keep 60% ($1200) and pass the remaining 40% ($800) to Ian.
+Ian keeps 100% of the $800 and passes nothing ($0) to Kathy, because Kathy (or someone working for Kathy) did not have any part in the sale.
+Kathy will **not** receive payouts from every sale made by Ian.
+Kathy will only receive payouts for sales in which she (or someone working below her) made the sale.
+
 Using the power of crypto contracts, no one is able to cheat their contract and keep more than their agreed upon portion.
 
-Given the complete network of salespeople and a list of sales for the day, compute how much everyone earns for the day. You should round the final profit for each salesperson to the nearest whole number.
-
+Given the complete network of salespeople and a list of sales for the day, compute how much everyone earns for the day.
+You should round the final profit for each salesperson to the nearest whole number.
 
 ## Input
 As input, you will receive the following:
