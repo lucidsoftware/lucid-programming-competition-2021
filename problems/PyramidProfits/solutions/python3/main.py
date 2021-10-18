@@ -74,9 +74,9 @@ class PyramidProfitCalculator:
         # The reverse part is to make sure that Boss contracts are
         # honored first, and *then* the remainder is passed to the
         # subordinates.
-        profit_remaining = float(sale.profit)
+        profit_remaining = sale.profit
         for relationship in reversed(trace):
-            boss_cut = 0.01 * (100 - relationship.percentage) * profit_remaining
+            boss_cut = (1 / 100.0) * (100 - relationship.percentage) * profit_remaining
             profit_remaining -= boss_cut
 
             self.earnings[relationship.boss] += boss_cut
