@@ -9,7 +9,7 @@ This sentence may, or may not contain grammatical errors according to the gramma
 
 Enforce the following grammar rules:
 
-1. Each sentence must start with a capital letter and end with a single period.
+1. Each sentence must start with a capital letter and end with a single period. No other periods should appear in the sentence.
 2. Commas must come immediately after a word, and they must be followed by one space and then another word.
 3. Multiple spaces in a row are not allowed. Each space must be singular.
 
