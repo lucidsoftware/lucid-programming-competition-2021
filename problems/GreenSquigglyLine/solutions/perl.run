@@ -1,0 +1,2 @@
+#!/bin/bash
+perl $(dirname $0)/perl5/Solver.pl
