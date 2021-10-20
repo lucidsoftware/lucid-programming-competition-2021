@@ -35,6 +35,12 @@ yes
 1
 ```
 
+### Explanation
+
+First, Alice claims Bob. Let's call them team A. Next, Charlie claims David. Let's call them team B. The answer to the query `? Alice Charlie` is no, because Alice is on team A and Charlie on team B. Bob and Alice are both on team A, so we return yes for the second query.
+
+Next, Bob claims Charlie. Charlie comes to team A, and brings all those he brought to team B. In this case, that is David. Now, all four students are on team A. Note that David is now considered stolen. If there were to be more queries, he would never leave team A. Also note that Charlie is not considered stolen yet, because this is the first time he has been claimed by another team.
+
 ### Input 1
 ```
 7
@@ -54,3 +60,9 @@ yes
 no
 2
 ```
+
+### Explanation
+
+The first three commands of this input match the first three commands of Input 0, meaning Alice, Bob, Charlie, and David are all on team A, and David is considered stolen.
+
+Next, Emily claims Alice. Alice has not been stolen (or even claimed) yet, so she moves to Emily's team (team C). Alice brought Bob to team A, so he comes with her. Bob brought both Charlie and David to team A. Charlie has not been stolen yet, so he comes to team C with Bob. However, David has already been stolen, and so he remains on team A. Now, team A consists of just David, team B is empty, and team C consists of Alice, Bob, Charlie, and Emily. Since team B is empty, we do not count it in the final team count. To clarify, at the end of the input, Bob, Charlie, and David have all been stolen once, and are thus locked into their respective teams. Alice has been claimed once, so she may move teams one more time. Emily has not been claimed nor stolen yet.
