@@ -84,6 +84,6 @@ At house 1, the visitor gets scared 4 times by the house itself. They have not v
 
 At house 0, the visitor gets scared 4 times by the house itself. They have visited houses 1 and 3, so they are scared 10 times by house 3 and 4 times by house 1. They are scared 18 times in total.
 
-At house 2, the visitor gets scared 4 times by the house itself. They have visited houses 0 and 1, sot they are scared 4 times by each. They are scared 12 times in total.
+At house 2, the visitor gets scared 4 times by the house itself. They have visited houses 0 and 1, so they are scared 4 times by each. They are scared 12 times in total.
 
 Thus, the visitor is scared `10 + 4 + 18 + 12 = 44` times in total.

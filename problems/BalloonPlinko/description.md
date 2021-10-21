@@ -6,8 +6,9 @@ In order to safely get away, they will have to jump and slide between the balloo
 
 When they jump, they will fall straight down and then slide off each balloon they encounter, until they finally reach the river at height 0.
 While sliding off each balloon, they slide along the slope of the spherical balloon, and then continue to fall directly downwards.
-As the slope of each balloon is always directly away from the `(x, y)` coordinates of the center of the balloon, the angle of the person relative to the balloon stays constant as they are sliding, up until they are at the edge of the balloon.
+As the slope of each balloon is always directly away from the `(x, y)` coordinates of the center of the balloon, the angle of the person's `(x, y)` coordinates relative to the `(x, y)` coordinates of the center of the balloon stays constant as they are sliding, up until they are at the edge of the balloon.
 
+If they jump from the bridge at position `(0, 0, 1500)`, where will they land?
 
 ## Interpreting the Input
 The input consists of the number of balloons `n`, and then `n` lines each describing a balloon's `x` position, `y` position, `z` position, and radius.
@@ -84,12 +85,12 @@ Thus, the final falling location is `(0, 1)`.
 The landing location is at `(-34, -32)`.
 
 The first balloon is at `(2, 2, 100)` with a radius of 50.
-The landing location is at (0, 0) on the balloon, which is an angle of 225 degrees from the center of the balloon.
+They are falling at (0, 0), which is an angle of 225 degrees from the center of the balloon.
 Thus, they slide until they are 50 units away from the center, still at an angle of 225 degrees, and end up at
 `(-33.355, -33.355)`.
 
 The second balloon is at `(-30, -35, 20)` with a radius of 5.
-The landing location is at `(-33.355, -33.355)`, which is an angle of 153.88 degrees from the center of the balloon, and less than 5 distance from the center of the balloon.
+They are falling at `(-33.355, -33.355)`, which is an angle of 153.88 degrees from the center of the balloon, and less than 5 distance from the center of the balloon.
 Thus, they slide until they are 5 units away from the center, still at an angle of 153.88 degrees, and they end up at `(-34.489, -32.800)`.
 
 Rounding up to the next integer, the final landing location is `-34, -32`.
