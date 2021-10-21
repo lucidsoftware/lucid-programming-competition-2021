@@ -12,7 +12,7 @@ To try to bring some order to the chaos, the students also ask if another studen
 
 After processing all commands and queries, any students not yet on a team form teams of size 1. So, if Emily does not yet have a team at the end of input, she forms a team that consists of just Emily (and presumably feels a bit left out). Every student's name will appear in the input at least once.
 
-No student will claim themself. If a student tries to claim a student already on their team, do nothing.
+No student will claim themself. If a student tries to claim a student already on their team, do nothing (this also does not count toward the would-be claimed student's claim count).
 
 ## Input
 
