@@ -18,7 +18,7 @@ As output, you will give a single integer representing the number of times the w
 
 ## Constraints
 * String input will never exceed 100,000 characters in length
-* all alphabetical characters will be lowercase
+* All alphabetical characters will be lowercase
 * Whitespace and other special characters are valid input
 
 ## Examples
