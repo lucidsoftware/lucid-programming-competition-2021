@@ -31,7 +31,7 @@ True
 
 ## Constraints
 * Where `m` is the number of integers, `1 <= m <= 1000`
-* Where `i` is an integer in the list, `0 <= s <= 100`
+* Where `s` is an integer in the list, `0 <= s <= 10000`
 
 ## Examples
 
