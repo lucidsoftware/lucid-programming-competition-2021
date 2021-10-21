@@ -10,11 +10,13 @@ Finally, when a student is moved to a new team, they take all the students with 
 
 To try to bring some order to the chaos, the students also ask if another student is already on their team.
 
+After processing all commands and queries, any students not yet on a team form teams of size 1. So, if Emily does not yet have a team at the end of input, she forms a team that consists of just Emily (and presumably feels a bit left out). Every student's name will appear in the input at least once.
+
 No student will claim themself. If a student tries to claim a student already on their team, do nothing.
 
 ## Input
 
-Input will begin with a non-negative integer N <= 100000, representing the number of lines that follow. Each of the following N lines will be either a command or a query. Commands are in the form `+ A B`, meaning student A adds student B to their team. Queries are in the form `? A B`, meaning "Are students A and B on the same team?" You may assume that every student's name will appear in either a command or query at least once. Every name will be unique and consist only of lowercase and uppercase letters [a-zA-Z].
+Input will begin with a non-negative integer N <= 100000, representing the number of lines that follow. Each of the following N lines will be either a command or a query. Commands are in the form `+ A B`, meaning student A adds student B to their team. Queries are in the form `? A B`, meaning "Are students A and B on the same team?" Again, every student's name will appear in either a command or query at least once. Every name will be unique and consist only of lowercase and uppercase letters [a-zA-Z].
 
 ## Output
 
