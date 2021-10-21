@@ -59,7 +59,7 @@ I am not a robot.
 ### Output 0
 
 ```
-mtrtao o nabI o.
+mtrtao o nabI  o.
 ```
 
 ### Input 1
