@@ -42,7 +42,7 @@ You should round the final profit for each salesperson to the nearest whole numb
 As input, you will receive the following:
 
 * The number of salespeople in the network, not including Jude.
-* For each salesperson, their name followed by the name of their immediate boss in the network, followed by the integer percentage of their immediate boss's profits they are allowed to keep.
+* For each salesperson, their name followed by the name of their immediate boss in the network, followed by the integer percentage of **their immediate boss's profits** they are allowed to keep.
 * The number of sales made for the day
 * For each sale, the name of the salesperson that made the sale and the total profit in that sale
 
