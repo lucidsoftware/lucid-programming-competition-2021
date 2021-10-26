@@ -1,36 +1,36 @@
-service: 
+service:
   name: 'new-leaderboard'
 
 frameworkVersion: '2'
 
-custom: 
-  webpack: 
+custom:
+  webpack:
     webpackConfig: './webpack.config.js'
     includeModules: true
-  
+
 plugins:
   - serverless-webpack
 
-provider: 
+provider:
   name: 'aws'
   region: 'us-east-2' # Ohio
   runtime: 'nodejs12.x'
   memorySize: 256
-  apiGateway: 
+  apiGateway:
     minimumCompressionSize: 1024
   httpApi:
     payload: '1.0'
-  
-  environment: 
+
+  environment:
     AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1'
-    CONTEST_SLUG: "lucid-internal-2020"
+    CONTEST_SLUG: "lucid-internal-2021"
     HACKERRANK_AUTH: "blah"
-  
 
 
 
-functions: 
-  leaderboard: 
+
+functions:
+  leaderboard:
     handler: 'handler.api'
-    events:       
+    events:
       - httpApi: '*'
