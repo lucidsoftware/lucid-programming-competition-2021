@@ -25,8 +25,6 @@ export type Username = string;
 export interface Profile {
     username: Username;
     school: string;
-    teamNumber: number;
-    teamName: string;
 }
 
 export type Status = "Accepted" | "Compilation error" | "Runtime Error" | "Segmentation Fault" | "Terminated due to timeout" | "Wrong Answer";

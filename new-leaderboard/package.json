@@ -9,13 +9,14 @@
   "dependencies": {
     "@types/cookie": "^0.4.0",
     "aws-serverless-express": "^3.3.8",
-    "axios": "^0.20.0",
+    "axios": "^0.24.0",
     "cookie": "^0.4.1",
     "express": "^4.17.1",
     "source-map-support": "^0.5.10"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.17",
+    "copy-webpack-plugin": "^6",
     "@types/node": "^10.17.38",
     "@types/serverless": "^1.72.5",
     "fork-ts-checker-webpack-plugin": "^3.0.1",

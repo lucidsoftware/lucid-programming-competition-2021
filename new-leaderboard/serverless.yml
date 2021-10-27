@@ -14,7 +14,7 @@ plugins:
 provider:
   name: 'aws'
   region: 'us-east-2' # Ohio
-  runtime: 'nodejs12.x'
+  runtime: 'nodejs14.x'
   memorySize: 256
   apiGateway:
     minimumCompressionSize: 1024
@@ -23,11 +23,8 @@ provider:
 
   environment:
     AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1'
-    CONTEST_SLUG: "lucid-internal-2021"
+    CONTEST_SLUG: "lpc-2021"
     HACKERRANK_AUTH: "blah"
-
-
-
 
 functions:
   leaderboard:

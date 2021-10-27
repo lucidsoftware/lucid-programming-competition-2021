@@ -15,12 +15,14 @@ import {
     submissionsCache,
 } from './common';
 
+import schoollookup from './schoollookup';
+
 
 const leaderboardHtmlHeaderContent =
 `    <head>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-        <style>.container { min-width:1300px; } .title {color: black;}</style>
+        <style>.container { max-width: none; min-width: 1300px; width: unset; margin-left: 3em; margin-right: 3em; margin-bottom: 6em;} .title {color: black;}</style>
         <style>
         .tooltip {
             position: relative;
@@ -133,15 +135,19 @@ function getNameCellContents(profile: Profile): string {
 }
 
 function getLocationCellContents(profile: Profile, schoolFilter?: string): string {
-    const prettySchoolName = schoolNameMap[profile.school];
-    if (!!prettySchoolName) {
+    const bucketName = profile.school ? schoolNameMap[profile.school.toLowerCase()] : null;
+    if (!!bucketName) {
         if (!schoolFilter) {
-            return `<a href='?school=${prettySchoolName}'>${prettySchoolName}</a>`;
+            return `<a href='?school=${bucketName}'>${bucketName}</a>`;
         } else {
-            return prettySchoolName;
+            return bucketName;
         }
     } else {
-        return `<a class="tooltip" href="https://www.hackerrank.com/settings/bio">Unrecognized School<span class='tooltiptext'></span>`;
+        if (profile.school === undefined) {
+            return `Unknown School`
+        } else {
+            return `${profile.school}<br /><span style='color: red'>(not bucketed for scoring yet!)</span>`
+        }
     }
 }
 
@@ -162,8 +168,12 @@ export async function getHtml(schoolFilter?: string): Promise<string> {
     const submissionsByUsername = groupByKey(allSubmissions, 'username');
     const usernames = Object.keys(submissionsByUsername);
 
-    const allProfiles = usernames.map(username => ({username: username}));
-    const usernameToProfile: Map<Username, Profile> = new Map(allProfiles.map(profile => [profile.username, profile] as [any, any]));
+    const allProfiles = await Promise.all(usernames.map(async username => ({
+        username: username,
+        school: await schoollookup.getScoringBucket(username),
+    })));
+
+    const usernameToProfile: Map<Username, Profile> = new Map(allProfiles.map(profile => [profile.username, profile]));
 
     const teamScores = Object.keys(submissionsByUsername).map(username => {
         const submissions = submissionsByUsername[username];
