@@ -10,7 +10,7 @@ As the slope of each balloon is always directly away from the `(x, y)` coordinat
 
 If they jump from the bridge at position `(0, 0, 1500)`, where will they land?
 
-![image](ex.png)
+![image](images/ex.png)
 
 ## Interpreting the Input
 The input consists of the number of balloons `n`, and then `n` lines each describing a balloon's `x` position, `y` position, `z` position, and radius.
