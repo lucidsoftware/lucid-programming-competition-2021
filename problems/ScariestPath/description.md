@@ -1,4 +1,4 @@
-## Problem Statement
+# Scariest Path
 
 A strange neighborhood has a collection of haunted houses, and visitors will come to this neighborhood and try to find the scariest order to visit the haunted houses. When visitors go into these haunted houses, they get scared in a unique way. They know how scary a house is after they visit it, and so they also get scared by the neighboring houses which they have already visited when they enter a haunted house.
 

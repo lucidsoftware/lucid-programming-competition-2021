@@ -1,4 +1,4 @@
-## Problem Statement
+# Balloon Plinko
 
 A group of children are being chased by Pennywise, and have been chased onto a bridge.
 There are balloons filling the space beneath the bridge, and clowns closing in from either side of the bridge.
