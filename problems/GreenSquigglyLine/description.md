@@ -1,4 +1,4 @@
-# The Green Squiggly Line
+# Green Squiggly Line
 
 English grammar is difficult.
 Even the best writers will make mistakes, which is why grammar checking tools are so useful.
