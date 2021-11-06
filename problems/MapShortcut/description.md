@@ -1,5 +1,5 @@
 # Map Shortcut
-## Description
+
 You and your friends have discovered a treasure map leading to a trove of buried treasure. Your friends are planning on following each step of the map until they reach the treasure at the end. However, you would rather not share the treasure with your entire group of friends. Instead of following each step of the map, you want to first determine exactly where the treasure is buried, so you can go there directly.
 ## Input
 ```
