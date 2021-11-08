@@ -1,5 +1,3 @@
-import sys
-
 G = input()
 E = int(input())
 
@@ -9,15 +7,13 @@ i = 0
 added, deleted = 0, 0
 
 
-def p(arg):
-    sys.stdout.write(arg)
-
+res = ''
 
 for e in range(E):
     ind, op = input().split(' ')
     ind = int(ind)
     while i < ind + deleted - added and i < len(G):
-        p(G[i])
+        res += G[i]
         i += 1
     if set(op).issubset(digits):
         # Deletion
@@ -26,16 +22,9 @@ for e in range(E):
         deleted += op
     else:
         # Insertion
-        p(op)
-        if i < len(G):
-            p(G[i])
-        i += 1
+        res += op
         added += len(op)
 
-while i < len(G):
-    p(G[i])
-    i += 1
+res += G[i:]
 
-sys.stdout.write('\n')
-sys.stdout.flush()
-
+print(res)
