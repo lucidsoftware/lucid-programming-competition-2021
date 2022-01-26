@@ -1,4 +1,4 @@
-# Fruit Basket
+# Apple Factory
 
 The apple factory had a mixup when ordering labels, and now they are left with a whole bunch of letters they don't need in the wrong order. Your boss needs to know how many apple baskets can be marked by salvaging the labels you do have.
 

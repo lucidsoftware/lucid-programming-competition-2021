@@ -1,4 +1,4 @@
-# Pyramid of Profits
+# Pyramid Profits
 
 You've been hired by an enthusiastic entrepreneur named Jude.
 

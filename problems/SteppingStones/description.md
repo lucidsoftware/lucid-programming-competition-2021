@@ -1,6 +1,5 @@
 # Stepping Stones
 
-## Problem Statement
 Tai Lung has escaped from the prison and fast approaching the village of Po to seek his revenge. To make things worse, he broke the gates of the village’s reservoir leaving the entire village flooded. Sensing the impending danger, Po has started evacuating the village but is faced with a daunting task.
 
 The village is represented as a matrix `A` (**1-based**) with `m` rows and `n` columns. Initially, the entire matrix is covered with **stones** (represented by `1`). Every day any one cell of the matrix `A` will be flooded with water (represented by `0`). Once the cell is flooded its value changes from `1` to `0`. You are given a **1-based** array `floods` where <code>floods[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> represents the coordinates of the cell `A`[<code>x<sub>i</sub></code>][<code>y<sub>i</sub></code>] in matrix `A` that will be flooded on day `i`. A cell once flooded will not be changed back to stone.

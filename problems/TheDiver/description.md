@@ -1,4 +1,4 @@
-## Problem Statement
+# The Diver
 
 A diver is exploring a cavern, represented as a 2D n x m array (m rows, n columns). He can only move **vertically** or **across**. In the cavern array that is given as input, three possibilities for a given location are represented by three numbers: 
 1. A **cave area** (represented as 2147483647, which is the maximum 32-bit integer value)
